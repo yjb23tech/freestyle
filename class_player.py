@@ -35,22 +35,23 @@ class Player:
         print(f"Danger is near... you must arm yourself {self.str_name}! Pick a weapon NOW:\n")
         x = 1 
         for weapon in self.arr_weapons_inventory:
-            print(f"Weapon Name: {weapon.str_name}; Attack Power: {weapon.int_atk_pwr}")
+            print(f"{x}. Weapon Name: {weapon.str_name}; Attack Power: {weapon.int_atk_pwr}")
+            x += 1 
         
         while (self.obj_weapon_in_hand == None):
-            user_input_weapon_in_hand = int(input(f"Pick from the weapons above; enter the number corresponding to your weapon of choice:\n"))
+            user_input_weapon_in_hand = int(input(f"\nPick from the weapons above; enter the number corresponding to your weapon of choice:\n"))
 
             if user_input_weapon_in_hand == 1:
                 self.obj_weapon_in_hand = self.arr_weapons_inventory[user_input_weapon_in_hand - 1]
-                print(f"You're now wielding the {self.obj_weapon_in_hand.str_name}")
+                print(f"\nYou're now wielding the {self.obj_weapon_in_hand.str_name}")
             elif user_input_weapon_in_hand == 2:
                 self.obj_weapon_in_hand = self.arr_weapons_inventory[user_input_weapon_in_hand - 1]
-                print(f"You're now carrying the {self.obj_weapon_in_hand.str_name}")
+                print(f"\nYou're now carrying the {self.obj_weapon_in_hand.str_name}")
             elif user_input_weapon_in_hand == 3:
                 self.obj_weapon_in_hand = self.arr_weapons_inventory[user_input_weapon_in_hand - 1]
-                print(f"GunMan! You're now toting the {self.obj_weapon_in_hand.str_name} - point and shoot!")
+                print(f"\nGunMan! You're now toting the {self.obj_weapon_in_hand.str_name} - point and shoot!")
             else:
-                print("Input not understood")
+                print("\nInput not understood")
         
 
 
