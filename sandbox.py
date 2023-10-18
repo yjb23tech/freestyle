@@ -9,6 +9,8 @@ user_player.display_weapons_inventory()
 
 user_player.get_weapon_in_hand()
 
+user_player.set_weapon_in_hand()
+
 
 
 
