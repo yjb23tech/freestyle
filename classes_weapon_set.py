@@ -24,4 +24,13 @@ class Dagger(Weapon):
 
         self.int_atk_pwr = random.randint(30, 40)
 
+class Pistol(Weapon):
+
+    def __init__(self):
+
+        self.str_name = "Pistol"
+        self.str_msg = "the go to weapon in a gunslinging contest or when you have a medium range target to hit"
+
+        self.int_atk_pwr = random.randint(40, 45)
+
 
