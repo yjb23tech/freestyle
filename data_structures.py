@@ -11,3 +11,11 @@ arr_world_map = [
 
 arr_weapons_inventory = [Cutlass(), Dagger(), Pistol()]
 
+arr_options_north = ['North', 'NORTH', 'north', 'N', 'n', '^']
+arr_options_east = ['East', 'EAST', 'east', 'E', 'e', '>']
+arr_options_south = ['South', 'SOUTH', 'south', 'S', 's', 'v']
+arr_options_west = ['West', 'WEST', 'west', 'W', 'w', '<']
+arr_options_quit = ['Quit', 'QUIT', 'quit', 'Q', 'q', 'q']
+
+
+

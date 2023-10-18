@@ -7,6 +7,10 @@
 #test_weapon_3 = Pistol()
 #print(test_weapon_3)
 
+#test_tile = Tile(1, 1, "Romance Dawn", "Centre")
+    #print(test_tile)
+    #user_player.display_weapons_inventory()
+
 from data_structures import arr_world_map 
 
 print(" ")
