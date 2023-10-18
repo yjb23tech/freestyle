@@ -53,7 +53,7 @@ class Player:
                 self.bool_desire_to_change_weapon = True 
                 self.equip_weapon_in_hand()
             else:
-                print("NFA")   
+                print("No weapon change was made")   
     
     def equip_weapon_in_hand(self):
 
