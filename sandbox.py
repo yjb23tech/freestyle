@@ -9,14 +9,14 @@ print(user_player)
 test_tile = Tile(1, 1, "Romance Dawn", "Centre")
 print(test_tile)
 
-user_player.display_weapons_inventory()
+#user_player.display_weapons_inventory()
 
+#First go round
 user_player.get_weapon_in_hand()
-
 user_player.set_weapon_in_hand()
-
 user_player.display_player_status()
 
+#Second go round 
 user_player.get_weapon_in_hand()
 user_player.set_weapon_in_hand()
 user_player.display_player_status()
