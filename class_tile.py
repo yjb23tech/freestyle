@@ -9,5 +9,18 @@ class Tile:
     
     def __str__(self):
         
-        return (f"Welcome to {self.str_name} Island! This island is in the {self.str_quadrant} quadrant of the map and has coordinates [{self.int_loc_x}, {self.int_loc_y}]")
+        return (f"\nWelcome to {self.str_name} Island! This island is in the {self.str_quadrant} quadrant of the map and has coordinates [{self.int_loc_x}, {self.int_loc_y}]")
+    
+    def pvp_battle_sequence(self, player):
+
+        print(self)
+        print(f"Are you ready to do battle {player.str_name}? Gear up!")
+
+        player.get_weapon_in_hand()
+        player.set_weapon_in_hand()
+        player.display_player_status()
+
+        player.set_int_loc_x_y(self.int_loc_x, self.int_loc_y)
+
+
     
