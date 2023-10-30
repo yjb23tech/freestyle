@@ -1,11 +1,18 @@
 class Tile: 
 
-    def __init__(self, int_loc_x, int_loc_y, str_name, str_quadrant):
+    def __init__(self, int_loc_x, int_loc_y, int_first_label_loc_x, int_first_label_loc_y, str_name, str_quadrant):
 
         self.int_loc_x = int_loc_x 
         self.int_loc_y = int_loc_y
         self.str_name = str_name 
         self.str_quadrant = str_quadrant 
+
+        self.int_first_label_loc_x = int_first_label_loc_x
+        self.int_first_label_loc_y = int_first_label_loc_y
+
+        self.int_second_label_loc_x = self.int_first_label_loc_x
+        self.int_second_label_loc_y = self.int_first_label_loc_y + 1 
+
     
     def __str__(self):
         

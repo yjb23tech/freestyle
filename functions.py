@@ -41,3 +41,13 @@ def deny_chosen_direction(arr_game_grid, obj_user_player, str_chosen_direction):
     print(f"\nAttempting to travel {str_chosen_direction} from {current_tile_location.str_name} will take you to uncharted waters Captain {obj_user_player.str_name}")
     print(f"Your ship will therefore remain docked on {current_tile_location.str_name}")
 
+def display_world_map_front_end(arr_game_grid):
+     
+     for x in range(len(arr_game_grid)):
+        for y in range(len(arr_game_grid[x])):
+            building_block = arr_game_grid[x][y]
+            print(f"{building_block}", end=" ")
+        print("")
+
+
+
